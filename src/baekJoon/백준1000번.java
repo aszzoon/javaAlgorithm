@@ -22,4 +22,12 @@ public class 백준1000번 {
 
     System.out.println(A + B);
   }
+
+  public String Grade(int score) {
+    if(score >= 90) {
+      return "A";
+    }
+    return "B";
+  }
 }
+
