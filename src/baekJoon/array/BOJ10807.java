@@ -13,5 +13,14 @@ public class BOJ10807 {
     for (int i = 0; i < N; i++) {
       numbers[i] = sc.nextInt();
     }
+
+    int v = sc.nextInt();
+    int count =0;
+    for(int i = 0; i < N; i++){
+      if(numbers[i] == v) {
+        count++;
+      }
+    }
+    System.out.println(count);
   }
 }
