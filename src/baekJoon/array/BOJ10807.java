@@ -4,23 +4,23 @@ import java.util.Scanner;
 
 public class BOJ10807 {
   public static void main(String[] args) {
-    //키보드 입력
-    Scanner sc = new Scanner(System.in);
-    // 배열의 크기
-    int N = sc.nextInt();
-    int[] numbers = new int[N];
 
-    for (int i = 0; i < N; i++) {
+    Scanner sc = new Scanner(System.in);
+    int N = sc.nextInt();
+
+    int[] numbers = new int[N];
+    for (int i=0; i < N; i++){
       numbers[i] = sc.nextInt();
     }
 
     int v = sc.nextInt();
-    int count =0;
-    for(int i = 0; i < N; i++){
-      if(numbers[i] == v) {
+    int count = 0;
+
+    for (int i =0; i < N; i++){
+
+      if(numbers[i] == v)
         count++;
-      }
     }
-    System.out.println(count);
+  System.out.println(count);
   }
 }
